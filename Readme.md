@@ -1,4 +1,5 @@
 ![Tests](https://github.com/gnpar/popkiller/workflows/Tests/badge.svg)
+![Build](https://github.com/gnpar/popkiller/workflows/Build/badge.svg)
 
 # Popkiller
 
