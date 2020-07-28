@@ -1,4 +1,5 @@
 const amqp = require('amqplib');
+const BJSON = require('buffer-json');
 
 async function consume (queue) {
   const conn = await amqp.connect(process.env.BROKER_URL);
@@ -7,7 +8,7 @@ async function consume (queue) {
   await channel.assertQueue(queue, { durable: true });
 
   await channel.consume(queue, msg => {
-    const msgContent = JSON.parse(msg.content.toString());
+    const msgContent = BJSON.parse(msg.content.toString());
     console.log('---------------------------------');
     console.log('BEGN MESSAGE FROM %s', queue);
     console.log(JSON.stringify(msgContent, null, 2));
