@@ -33,16 +33,6 @@ docker run -d \
     gnpar/popkiller
 ```
 
-```
-docker run -d \
-    --name popkiller \
-    --network node-amqpspike_default \
-    -e BROKER_URL=amqp://rabbit \
-    -e POPKILLER_ROUTES='{"example.org": "defaultqueue"}' \
-    -p 2525:2525 \
-    gnpar/popkiller
-```
-
 Once started, connect with an SMTP client to port 2525 and send an email:
 
 ```
