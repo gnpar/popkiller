@@ -1,0 +1,22 @@
+{
+  "name": "popkiller",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "amqplib": "^0.5.6",
+    "buffer-json": "^2.0.0",
+    "mailparser": "^2.7.7",
+    "smtp-server": "^3.7.0"
+  },
+  "devDependencies": {
+    "nodemailer": "^6.4.10",
+    "jest": "^26.1.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
